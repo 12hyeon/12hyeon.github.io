@@ -4,6 +4,7 @@ title: transaction 및 index
 categories: DB
 tags: [database, transaction, index, study]
 ---
+![database](https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2Fcontent%2Fcover_image_file%2Fcover_image%2F1282568%2Fregular_1708x683_0712-Bad_Practices_in_Database_Design_-_Are_You_Making_These_Mistakes_Dan_Newsletter-f90d29e5d2384eab9f4f76a0a18fa9a8.png)
 
 ## 트랜잭션
 
@@ -12,6 +13,9 @@ tags: [database, transaction, index, study]
 데이터베이스의 상태를 변화시키기 위해서 수행하는 작업의 단위로, 여러 작업의 묶음을 의미합니다. 예를 들어, 게시물 등록은 저장과 조회를 합친 하나의 트랜잭션입니다.
 
 ### 특징 4가지
+
+![트랜잭션 특징](https://www.databricks.com/wp-content/uploads/2021/02/delta-lake-1-min.png)
+
 - 원자성(모두 반영 또는 아예 반영하지 않음)
 - 일관성(중간에 업데이트 되더라도 처음 참조한 기준 이용)
 - 독립성
@@ -36,7 +40,7 @@ tags: [database, transaction, index, study]
 `rollback`: 비정상 종료로 인한 연산 결과를 취소
 
 
-## 인덱스란
+## 인덱스
 
 ### 정의
 
