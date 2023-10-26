@@ -1,5 +1,5 @@
 ---
-title: "Post : [spring] 시간 기반 태그 추천"
+title: "[spring] 시간 기반 태그 추천"
 date: 2023-10-25
 categories:
   - Blog
