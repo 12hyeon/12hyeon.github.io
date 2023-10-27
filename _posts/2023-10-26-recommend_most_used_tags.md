@@ -17,7 +17,7 @@ tags:
 
 
 
-### ****Sorted Set : 정렬 (↔ List : 순서, 중복o)****
+### **Sorted Set : 정렬 (↔ List : 순서, 중복o)**
 
 ---
 
@@ -50,13 +50,13 @@ tags:
 <br>
 
 
-### ****필터(Filter) vs 인터셉터(Interceptor)****
+### **필터(Filter) vs 인터셉터(Interceptor)**
 
 ---
 
 - 상황 : posting의 저장과 검색에서 tag를 사용한 경우
 
-### ****Filter****
+### **Filter**
 
 ---
 
@@ -64,7 +64,7 @@ tags:
 - request, response 조작 가능
 - 용도 : **공통된 보안**, 인증 작업 / **모든 요청에 대한 로깅** / 압축 및 인코딩
 
-### ****Interceptor****
+### **Interceptor**
 
 ---
 
