@@ -16,11 +16,9 @@ banner:
   min_height: "38vh"
   heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
   subheading_style: "color: gold"
-tags: jekyll theme yat
+tags: intro start
 sidebar: []
 ---
-
-It's time to start!
 
 ## test
 
@@ -31,3 +29,5 @@ def print_goal():
 print_goal()
 {% endhighlight %}
 
+
+## It's time to start!
