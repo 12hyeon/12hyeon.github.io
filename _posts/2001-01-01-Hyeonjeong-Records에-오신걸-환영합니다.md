@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hyeonjeong-Records에-오신걸-환영합니다.
+title: Hyeonjeong-Records에 오신걸 환영합니다.
 subtitle: I am Backend Developer.
 author: 12hyeon
 categories: 12hyeon
@@ -19,6 +19,8 @@ banner:
 sidebar: []
 ---
 
+## It's time to start!
+
 ## test
 
 {% highlight python %}
@@ -28,5 +30,3 @@ def print_goal():
 print_goal()
 {% endhighlight %}
 
-
-## It's time to start!
