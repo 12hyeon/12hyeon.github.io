@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to Hyeonjeong's Records!
+title: Hyeonjeong-Records에-오신걸-환영합니다.
 subtitle: I am Backend Developer.
 author: 12hyeon
 categories: 12hyeon
