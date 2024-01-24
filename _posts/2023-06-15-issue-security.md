@@ -31,7 +31,7 @@ Security에 의해 자동으로 **localhost:8080/login**으로 페이지가 넘�
 
 ### 2. 문제 해결 방법
 
-![github 이미지](../assets/images/issue-auth-swagger.png)
+![github 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEEaNP%2FbtsDSsK2ukl%2FVkJo6S64y1hxs8LRaX35CK%2Fimg.png)
 
 
 ```java
