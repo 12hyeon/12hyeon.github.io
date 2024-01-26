@@ -1,7 +1,7 @@
 {%- if page.paginator -%}
-  {%- assign paginator = page.paginator -%}
+{%- assign paginator = page.paginator -%}
 {%- elsif paginator == nil -%}
-  {%- assign paginator = site -%}
+{%- assign paginator = site -%}
 {%- endif -%}
 
 {%- if paginator.posts.size > 0 -%}
@@ -29,11 +29,21 @@
         <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: date_format }}</span>
         <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
       </div>
-      <a class="post-excerpt" href="{{ post_url }}">
-        <p>
-        {{ excerpt }} <span class="read_more">Read More</span>
-        </p>
-      </a>
+
+      <div class="post-excerpt">
+        <div class="excerpt-text">
+          <p>
+            {{ excerpt }}
+          </p>
+        </div>
+        <div class="excerpt-image">
+          {% assign first_image_url = article | split: '!['][1] | split: '](' | first %}
+          {% if first_image_url %}
+          <img src="{{ first_image_url }}" alt="Image">
+          {% endif %}
+        </div>
+      </div>
+
       <div class="post-tags">
         {%- for tag in post.tags -%}
         <a class="post-tag" href="{{ '/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
@@ -45,7 +55,7 @@
 
   <!-- Pagination links -->
   {%- if paginator.posts.size < site.posts.size -%}
-    {%- include views/paginator.html -%}
+  {%- include views/paginator.html -%}
   {%- endif -%}
 </div>
 {%- endif -%}

@@ -318,10 +318,21 @@ html {
   }
 
   .post-excerpt {
+    display: flex;
     color: #777;
     word-break: break-word;
     overflow-wrap: break-word;
   }
+
+  .excerpt-text {
+    flex: 1; /* Take up available space */
+    margin-right: 10px; /* Add margin for spacing between text and image */
+  }
+
+  .excerpt-image img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container width */
+  }
+
 
   .post-tags .post-tag {
     display: inline-block;
