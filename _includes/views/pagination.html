@@ -34,13 +34,13 @@
         <div class="excerpt-text">
           <p>
             {{ excerpt }}
+            <span class="read_more">Read More</span>
           </p>
         </div>
         <div class="excerpt-image">
-          {% assign first_image_url = article | split: '!['][1] | split: '](' | first %}
-          {% if first_image_url %}
-          <img src="{{ first_image_url }}" alt="Image">
-          {% endif %}
+          {% assign img_start = article | split: '](' | last %}
+          {% assign img_url = img_start | split: ')' | first %}
+          <img src="{{ img_url }}" alt="Post Image">
         </div>
       </div>
 
