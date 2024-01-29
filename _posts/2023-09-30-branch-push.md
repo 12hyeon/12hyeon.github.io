@@ -39,8 +39,9 @@ Problem : 이번에도 아직 로컬에 변경사항이 남아있어서 commit �
 ![cherry-pick error](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGUd8q%2FbtshlU4OUic%2FiiMB2E9RYWThKXTP8D4Ar0%2Fimg.png)
 
 무사히 cherry-pick에 의해서 main -> friends 브랜치로 commit이 이동한 것을 확인할 수 있습니다
-!
+
 ---
+
 
 ## 특정 원격 브랜치로 push
 

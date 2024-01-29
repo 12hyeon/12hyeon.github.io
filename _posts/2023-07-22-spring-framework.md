@@ -16,9 +16,11 @@ Spring 프레임워크는 자바 어플리케이션 개발을 위한 강력한 �
 - **라이브러리**: 사용자가 전체 흐름을 만들며, 라이브러리를 가져와서 필요한 곳에서 사용합니다.
 
 
+
 ## 스프링 컨테이너
 
 Spring의 핵심 컴포넌트 중 하나는 스프링 컨테이너입니다. 이 컨테이너는 설정 정보를 참고하여 어플리케이션을 구성하는 객체를 생성하고 관리합니다.
+
 
 
 ## 스프링의 프로그래밍 모델
@@ -51,7 +53,7 @@ AOP는 어플리케이션의 핵심 비즈니스 로직과 부가 기능 로직�
 ```java
   public class CalculatorAspect implements MethodInterceptor {
       @Override
-      public Object invoke(MethodInvocation method) throws Throwable {
+      public Object invoke(MethodInvocation method) {
           // 보조 업무 설정
           Log log = LogFactory.getLog(this.getClass());
           log.info("시~작! ------------------------- ");

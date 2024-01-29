@@ -13,6 +13,9 @@ tags: [flavor-spot-finder, security, spring, study]
 
 대신 Spring Security는 'SecurityFilterChain'을 사용하기를 권장하고 있습니다.
 
+---
+
+
 ## SecurityFilterChain
 
 WebSecurityConfigurerAdapter의 'webSecurityCustomizer()'와의 차이점
@@ -37,7 +40,7 @@ Security에 의해 자동으로 **localhost:8080/login**으로 페이지가 넘�
 ```java
     public class SecurityConfig {
       @Bean
-      public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+      public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) {
           return httpSecurity
                   .httpBasic().disable()
                   .csrf().disable()
