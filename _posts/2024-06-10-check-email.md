@@ -20,7 +20,7 @@ tags: [flavor-spot-finder, email-sender]
 
 - 코드
 
-  ```java
+```java
   /**
    * 이메일을 전송하는 메서드
    * 1) 메일 인증
@@ -41,9 +41,10 @@ tags: [flavor-spot-finder, email-sender]
 
       send(mail);
   }
-  ```
+```
 
-  ```java
+
+```java
   /**
    * SimpleMailMessage 객체를 생성하는 메서드
    *
@@ -64,9 +65,10 @@ tags: [flavor-spot-finder, email-sender]
       mail.setText(String.format(text.getContent(), createUUID(length)));
       return mail;
   }
-  ```
+```
 
-  ```java
+
+```java
   /**
    * 이메일을 전송하는 메서드
    *
@@ -79,7 +81,7 @@ tags: [flavor-spot-finder, email-sender]
           throw new CustomException(EMAIL_SENDING_FAILED);
       }
   }
-  ```
+```
 
 - yml 설정
 
