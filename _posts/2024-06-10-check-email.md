@@ -110,4 +110,4 @@ tags: [flavor-spot-finder, email-sender]
 ### 3. 회원가입에 따른 성공적인 전송
 
 
-![img.png](img/email-check.png)
+![회원가입 인증 메일](../assets/email-check.png)
