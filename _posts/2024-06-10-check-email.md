@@ -21,7 +21,7 @@ tags: [flavor-spot-finder, email-sender]
 - 코드
 
 ```java
-  /**
+  /*
    * 이메일을 전송하는 메서드
    * 1) 메일 인증
    * 2) 비밀번호 초기화
@@ -45,7 +45,7 @@ tags: [flavor-spot-finder, email-sender]
 
 
 ```java
-  /**
+  /*
    * SimpleMailMessage 객체를 생성하는 메서드
    *
    * @param to      수신자 이메일 주소
@@ -69,7 +69,7 @@ tags: [flavor-spot-finder, email-sender]
 
 
 ```java
-  /**
+  /*
    * 이메일을 전송하는 메서드
    *
    * @param mail SimpleMailMessage 객체
@@ -87,16 +87,16 @@ tags: [flavor-spot-finder, email-sender]
 
   ```yml
     mail:
-    host: smtp.gmail.com
-    port: 587
-    username: (@gmail.com 메일)
-    password: (16자)
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
+      host: smtp.gmail.com
+      port: 587
+      username: (@gmail.com 메일)
+      password: (16자)
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
   ```
 
 ### 2. gmail에서 SMTP용 계정 설정
