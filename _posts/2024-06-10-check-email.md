@@ -19,64 +19,70 @@ tags: [flavor-spot-finder, email-sender]
 
 
 - 코드
+
   ```java
-    /**
-     * 이메일을 전송하는 메서드
-     * 1) 메일 인증
-     * 2) 비밀번호 초기화
-     *
-     * @param to      수신자 이메일 주소
-     * @param subject 이메일 주제
-     * @param content    이메일 내용
-     */
-    public void sendMail(String to, MailComponents subject, MailComponents content) {
+  /**
+   * 이메일을 전송하는 메서드
+   * 1) 메일 인증
+   * 2) 비밀번호 초기화
+   *
+   * @param to      수신자 이메일 주소
+   * @param subject 이메일 주제
+   * @param content    이메일 내용
+   */
+  public void sendMail(String to, MailComponents subject, MailComponents content) {
 
-        SimpleMailMessage mail = new SimpleMailMessage();
+      SimpleMailMessage mail = new SimpleMailMessage();
 
-        // 인증 메일을 보내는 경우
-        if (subject.equals(VERIFICATION_SUBJECT)) {
-            createMail(mail, to, subject, content, 6);
-        }
+      // 인증 메일을 보내는 경우
+      if (subject.equals(VERIFICATION_SUBJECT)) {
+          createMail(mail, to, subject, content, 6);
+      }
 
-        send(mail);
-    }
+      send(mail);
+  }
+  ```
 
-    /**
-     * SimpleMailMessage 객체를 생성하는 메서드
-     *
-     * @param to      수신자 이메일 주소
-     * @param subject 이메일 주제
-     * @param text    이메일 내용
-     * @param length  생성할 인증 코드 길이
-     * @return 생성된 SimpleMailMessage 객체
-     */
-    private SimpleMailMessage createMail(SimpleMailMessage mail,
-                                         String to,
-                                         MailComponents subject,
-                                         MailComponents text,
-                                         int length) {
-        mail.setTo(to);
-        mail.setSubject(subject.getContent());
-        // 메일 내용 구성
-        mail.setText(String.format(text.getContent(), createUUID(length)));
-        return mail;
-    }
+  ```java
+  /**
+   * SimpleMailMessage 객체를 생성하는 메서드
+   *
+   * @param to      수신자 이메일 주소
+   * @param subject 이메일 주제
+   * @param text    이메일 내용
+   * @param length  생성할 인증 코드 길이
+   * @return 생성된 SimpleMailMessage 객체
+   */
+  private SimpleMailMessage createMail(SimpleMailMessage mail,
+                                       String to,
+                                       MailComponents subject,
+                                       MailComponents text,
+                                       int length) {
+      mail.setTo(to);
+      mail.setSubject(subject.getContent());
+      // 메일 내용 구성
+      mail.setText(String.format(text.getContent(), createUUID(length)));
+      return mail;
+  }
+  ```
 
-    /**
-     * 이메일을 전송하는 메서드
-     *
-     * @param mail SimpleMailMessage 객체
-     */
-    private void send(SimpleMailMessage mail) {
-        try {
-            javaMailSender.send(mail);
-        } catch (MailException e) {
-            throw new CustomException(EMAIL_SENDING_FAILED);
-        }
-    }
+  ```java
+  /**
+   * 이메일을 전송하는 메서드
+   *
+   * @param mail SimpleMailMessage 객체
+   */
+  private void send(SimpleMailMessage mail) {
+      try {
+          javaMailSender.send(mail);
+      } catch (MailException e) {
+          throw new CustomException(EMAIL_SENDING_FAILED);
+      }
+  }
   ```
 
 - yml 설정
+
   ```yml
     mail:
     host: smtp.gmail.com
@@ -102,4 +108,4 @@ tags: [flavor-spot-finder, email-sender]
 ### 3. 회원가입에 따른 성공적인 전송
 
 
-![img.png](../assets/images/email-check.png)
+![img.png](img/email-check.png)
