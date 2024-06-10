@@ -109,5 +109,4 @@ tags: [flavor-spot-finder, email-sender]
 
 ### 3. 회원가입에 따른 성공적인 전송
 
-
-![회원가입 인증 메일](../assets/email-check.png)
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb3BtFn%2FbtsHUUW4Lqa%2FZlLhVK8IihGSBsyXvmRGUK%2Fimg.png" width="300" height="250"/>
